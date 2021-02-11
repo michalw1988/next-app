@@ -15,6 +15,10 @@ export default function ItemDetails({ itemDetails }) {
       <meta property="og:title" content={`Item ${itemDetails.id}`} />
       <meta property="og:description" content={itemDetails.title} />
       <meta property="og:image" content={itemDetails.thumbnailUrl} />
+
+      <meta property="og:description" content="A full description of the page."/>
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
     </Head>
     <Link href={`/items`}>&lt; powrót</Link>
     <h1>
