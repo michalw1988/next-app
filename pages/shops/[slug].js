@@ -10,10 +10,6 @@ export default function Shop({ shopData }) {
   const [shopPromotions, setShopPromotions] = useState([])
 
   useEffect(() => {
-    console.log('useEffect - 1st load')
-  }, [])
-
-  useEffect(() => {
     axios.get(`http://promocje-dla-dzieci-api.wenus.softnauts.com/api/promotions?latest&shop=${shopData.slug}&page=${page}&per_page=12`).then(response => {
       setShopPromotions(response.data.items)
     })

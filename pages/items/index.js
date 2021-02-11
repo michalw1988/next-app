@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import axios from 'axios'
 import Navbar from '../../components/Navbar'
+import ItemBox from '../../components/ItemBox/ItemBox'
 
 
 export default function Items({ items }) {
@@ -16,17 +17,13 @@ export default function Items({ items }) {
     <h1>
       Wszystkie
     </h1>
-    <ul>
-    {
-      items.map((item, i) => (
-        <li key={i}>
-          <Link href={`/items/${item.id}`}>
-            {item.title}
-          </Link>
-        </li>
-      ))
-    }
-    </ul>
+    <div className="items-wrapper">
+      {
+        items.map((item, i) => (
+          <ItemBox key={i} data={item} />
+        ))
+      }
+    </div>
   </>
 }
 
