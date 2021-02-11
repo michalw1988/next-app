@@ -1,0 +1,13 @@
+.navbar-wrapper {
+  background: #ccc;
+  display: flex;
+  padding: 16px 32px;
+
+  .link {
+    margin-right: 32px;
+
+    &.link-active {
+      font-weight: bold;
+    }
+  }
+}

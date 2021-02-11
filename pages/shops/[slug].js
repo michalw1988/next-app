@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import axios from 'axios'
+import Navbar from '../../components/Navbar'
 
 
 export default function Shop({ shopData }) {
@@ -22,6 +23,8 @@ export default function Shop({ shopData }) {
     <Head>
       <title>Sklep - {shopData.name}</title>
     </Head>
+    
+    <Navbar />
     <Link href={`/shops`}>
       &lt; powrót
     </Link>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Navbar from '../components/Navbar'
 
 export default function Home() {
   return (
@@ -8,15 +8,11 @@ export default function Home() {
       <Head>
         Strona główna
       </Head>
+      
+      <Navbar />
       <h1>
         Strona główna
       </h1>
-      <div>
-        <Link href={`/shops`}>Sklepy</Link>
-      </div>
-      <div>
-        <Link href={`/items`}>Test items</Link>
-      </div>
     </>
   )
 }

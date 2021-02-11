@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import axios from 'axios'
+import Navbar from '../../../components/Navbar'
 
 
 export default function Promotion({ promotionData }) {
@@ -14,6 +15,8 @@ export default function Promotion({ promotionData }) {
     <Head>
       <title>Promocja: {promotionData.title}</title>
     </Head>
+
+    <Navbar />
     <h1>{promotionData.title}</h1>
     <img src={promotionData.image_path} />
     <div>

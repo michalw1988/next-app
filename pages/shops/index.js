@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import axios from 'axios'
+import Navbar from '../../components/Navbar'
 
 
 export default function Shops({ shops }) {
@@ -9,6 +10,8 @@ export default function Shops({ shops }) {
     <Head>
       <title>Wszystkie sklepy</title>
     </Head>
+    
+    <Navbar />
     <Link href={`/`}>&lt; Strona główna</Link>
     <h1>
       Wszystkie sklepy

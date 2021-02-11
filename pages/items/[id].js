@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import axios from 'axios'
+import Navbar from '../../components/Navbar'
 
 
 export default function ItemDetails({ itemDetails }) {
@@ -17,6 +18,8 @@ export default function ItemDetails({ itemDetails }) {
       <meta property="og:image:width" content="600"/>
       <meta property="og:image:height" content="600"/>
     </Head>
+    
+    <Navbar />
     <Link href={`/items`}>&lt; powrót</Link>
     <h1>
       {itemDetails.title}
