@@ -11,7 +11,12 @@ export default function Home() {
       <h1>
         Strona główna
       </h1>
-      <Link href={`/shops`}>Sklepy</Link>
+      <div>
+        <Link href={`/shops`}>Sklepy</Link>
+      </div>
+      <div>
+        <Link href={`/items`}>Test items</Link>
+      </div>
     </>
   )
 }
