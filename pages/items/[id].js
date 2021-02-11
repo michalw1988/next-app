@@ -8,6 +8,7 @@ export default function ItemDetails({ itemDetails }) {
   return <>
     <Head>
       <title>Item {itemDetails.id} - {itemDetails.title}</title>
+      <meta name="description" content={itemDetails.title} />
       <meta property="og:url" content="https://promocjedladzieci.pl/" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Test next.js" />
